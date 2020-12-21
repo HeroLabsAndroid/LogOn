@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBckgrnd"
+    android:isScrollContainer="false"
+    app:layoutDescription="@xml/datetime_edit_scene">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fadeScrollbars="true"
+        android:fillViewport="true"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TimePicker
+                android:id="@+id/timeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBckgrnd"
+                android:headerBackground="@color/colorBckgrndLite"
+                android:nestedScrollingEnabled="true"
+                android:numbersBackgroundColor="@color/colorBckgrndLite"
+                android:numbersInnerTextColor="@color/colorTextDark"
+                android:numbersSelectorColor="@color/colorPrimary"
+                android:numbersTextColor="@color/colorText" />
+
+            <DatePicker
+                android:id="@+id/dateView"
+                style="@android:style/Widget.DeviceDefault.DatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBckgrnd"
+                android:calendarTextColor="@color/colorText"
+                android:defaultFocusHighlightEnabled="true"
+                android:foregroundGravity="center"
+                android:headerBackground="@color/colorBckgrndLite"
+                android:nestedScrollingEnabled="true"
+                android:spinnersShown="true"
+                android:yearListItemTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:yearListSelectorColor="@color/colorVar" />
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oki"
+                android:textColor="@color/colorText" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

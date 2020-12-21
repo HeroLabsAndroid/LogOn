@@ -1,0 +1,52 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TitleTextStyle">
+        <item name="fontFamily">cursive</item>
+        <item name="fontStyle">normal</item>
+    </style>
+
+    <style name="SmallText">
+        <item name="fontFamily">sans-serif</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="BigText">
+        <item name="fontFamily">sans-serif</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="NormalText">
+        <item name="fontFamily">sans-serif</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DatePickerStyle" parent="Widget.MaterialComponents.MaterialCalendar.Day">
+        <item name="android:numbersSelectorColor">@color/colorVar</item>
+    </style>
+    
+    <style name="DateTimePickerStyle" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="fontFamily">sans-serif</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:dayOfWeekTextAppearance">@style/BigText</item>
+        <item name="android:weekDayTextAppearance">@style/BigText</item>
+        <item name="android:calendarViewStyle">@style/DatePickerStyle</item>
+    </style>
+
+</resources>
